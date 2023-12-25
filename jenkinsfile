@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    dockerImage = docker.build("amuavia/personal-portfolio:${env.BUILD_ID}")
+                    dockerImage = docker.build("haseebhassan12/personal-portfolio:${env.BUILD_ID}")
                 }
             }
         }
